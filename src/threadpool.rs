@@ -111,7 +111,7 @@ impl Worker {
 // Pool struct and implementations
 // ************************************************
 
-struct Pool {
+pub struct Pool {
     workload_tx : TX,               // sender on which the pool distributes messages
     workload_rx : TSRX,             // receiver on which the workers receive messages
     workers     : Vec<Worker>       // contains worker informations
